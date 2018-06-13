@@ -66,7 +66,7 @@ func TestDecodeMetadata(t *testing.T) {
 func TestDecodeReviews(t *testing.T) {
 	example := `{
 		"name": "Orange",
-		"reviews": [{"stars": 3}, {"stars": 4}, {"stars": 2, "comment": "too sour"}]
+		"reviews": [{"stars": 3}, {"stars": 4}, {"stars": 2, "comment": "too sour", "user": {"id": 3277465, "email": "joe@coder.com"}}]
 		}`
 
 	var item Item
